@@ -6,7 +6,7 @@ const UserTable=(props)=> (
         <thead>
             <tr>
                 <th>Name</th>
-                <th>User</th>
+                <th>Username</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -15,7 +15,7 @@ const UserTable=(props)=> (
                     props.users.map((user)=> (
                         <tr key={user.id}>
                         <td>{user.name}</td>
-                        <td>{user.user}</td>
+                        <td>{user.username}</td>
                         <td>
                         <button className="button">Edit</button>
                         <button className="button">Delete</button>
